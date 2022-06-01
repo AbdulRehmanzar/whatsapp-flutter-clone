@@ -1,6 +1,10 @@
+
+
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:whatsappclone_flutter/CustomUI/CustomCard.dart';
+
 
 class ChatPage extends StatefulWidget {
   const ChatPage({Key? key}) : super(key: key);
@@ -17,6 +21,13 @@ class _ChatPageState extends State<ChatPage> {
          backgroundColor: const Color.fromARGB(255, 13, 143, 132),
         onPressed: () {},
       child: const Icon(Icons.chat),
+      ),
+      body: ListView(
+        children: const [
+        CustomCard(),
+        CustomCard(),
+        
+        ],
       ),
     );
     
